@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/
+         http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+    <responseDate>2025-03-17T12:00:00Z</responseDate>
+    <request verb="ListRecords" metadataPrefix="oai_dc">
+        https://yourgithubusername.github.io/oai-pmh/
+    </request>
+    <ListRecords>
+        <!-- First Record -->
+        <record>
+            <header>
+                <identifier>oai:example.org:1001</identifier>
+                <datestamp>2025-03-10T10:00:00Z</datestamp>
+                <setSpec>collectionA</setSpec>
+            </header>
+            <metadata>
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+                           xmlns:dc="http://purl.org/dc/elements/1.1/"
+                           xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/
+                           http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+                    <dc:title>First Example Record</dc:title>
+                    <dc:creator>Jane Smith</dc:creator>
+                    <dc:subject>OAI-PMH Example</dc:subject>
+                    <dc:description>This is the first example record for batch harvesting.</dc:description>
+                    <dc:publisher>Example Publisher</dc:publisher>
+                    <dc:date>2025-03-10</dc:date>
+                    <dc:type>Text</dc:type>
+                    <dc:identifier>https://example.org/record/1001</dc:identifier>
+                    <dc:language>en</dc:language>
+                </oai_dc:dc>
+            </metadata>
+        </record>
+
+        <!-- Second Record -->
+        <record>
+            <header>
+                <identifier>oai:example.org:1002</identifier>
+                <datestamp>2025-03-11T11:30:00Z</datestamp>
+                <setSpec>collectionB</setSpec>
+            </header>
+            <metadata>
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+                           xmlns:dc="http://purl.org/dc/elements/1.1/"
+                           xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/
+                           http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+                    <dc:title>Second Example Record</dc:title>
+                    <dc:creator>John Doe</dc:creator>
+                    <dc:subject>OAI-PMH Metadata</dc:subject>
+                    <dc:description>This is the second example record for batch harvesting.</dc:description>
+                    <dc:publisher>Example Publisher</dc:publisher>
+                    <dc:date>2025-03-11</dc:date>
+                    <dc:type>Text</dc:type>
+                    <dc:identifier>https://example.org/record/1002</dc:identifier>
+                    <dc:language>en</dc:language>
+                </oai_dc:dc>
+            </metadata>
+        </record>
+    </ListRecords>
+</OAI-PMH>
